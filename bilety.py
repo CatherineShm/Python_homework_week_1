@@ -11,14 +11,17 @@
 print("Cześć! Teraz policzymy razem ile zapłacisz za bilety.")
 wiek = int(input("Ile masz lat? "))
 ilosc = int(input("Ile biletów chcesz kupić? "))
+
 if wiek >= 0 and wiek <= 6 :
-    cena = ilosc * 0
+    cena_wg_wieku = 0
 elif wiek >= 7 and wiek <= 17 :
-    cena = ilosc * 2.28
+    cena_wg_wieku = 2.28
 elif wiek >= 18 and wiek <= 64 :
-    cena = ilosc * 3.80
+    cena_wg_wieku = 3.80
 else :
-    cena = ilosc * 1.90
+    cena_wg_wieku = 1.90
+
+cena = ilosc * cena_wg_wieku
 
 if ilosc == 1 :
     print("Za jeden bilet zapłacisz", round(cena, 1), "złotych.")

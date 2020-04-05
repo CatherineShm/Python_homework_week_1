@@ -6,7 +6,7 @@ print("Cześć, ten program obliczy twój BMI(Body Mass Index). Zaczynamy? ")
 time.sleep(1)
 masa = float(input("Jaka jest twoja waga (w kg) ? "))
 wzrost = float(input("Podaj swój wzrost w cm: ")) / 100
-bmi = masa / (wzrost * wzrost)
+bmi = masa / wzrost ** wzrost
 if bmi < 18.5 :
     classif = "niedowaga"
 elif bmi >= 18.5 and bmi <= 24.9 :

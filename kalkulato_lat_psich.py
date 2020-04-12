@@ -1,11 +1,8 @@
-#### Zadanie 1.8 | Kalkulator lat psich (ok. 0,5 godz.)
+#### Zadanie 1.8 | Kalkulator lat psich
 #Zakładamy, że 1 ludzki rok, to 5 lat psich.
 #Za pomocą konsoli wczytaj imię i wiek psa.
 #Wypisz komunikat ile pies miałby lat gdyby był człowiekiem.
-#Przykład:
-#Podaj imię psa - Burek
-#Podaj wiek psa - 3
-#Gdyby Burek był człowiekiem, miałby 15 lat.
+
 imie = str(input("Podaj imię psa: "))
 wiek = int(input("Podaj wiek psa: "))
 wiek_1 = wiek * 5
